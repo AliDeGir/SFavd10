@@ -1,0 +1,184 @@
+<!-- SIDE NAVBAR OF BUTTONS AND CLICK TO VISIBLE SECTIONS, DISMISS SIDEBAR -->
+<!-- PUT HIDDEN IN ANOTHER DIV -->
+<!-- FIX HEADER LOGO TEXT TO SPLIT WHEN RESPONSIVE -->
+
+<!DOCTYPE html>
+<html lang="en" translate="no">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" type="image/png" href="Closeup.jpg" sizes="32x32">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sodexo Fellesforbundet avd 10</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-text">
+            <!-- TRY SPAN FOR RESPONSIVE LOGO -->
+            <h1 class="header-text-1">Sodexo <span>Fellesforbundet <span> Avd 10</span></span></h1>
+        </div>
+    </div>
+    <button id="VIP-BTN" class="vip-btn" onclick="openForm()">VIP</button>
+
+    <input type="checkbox" id="CHECK-BOX" class="check-box">
+    <label for="CHECK-BOX" class="burger" id="BURGER"><div></div></label>
+    <div class="lang-container">
+        <div id="google_translate_element" class="lang-menu"></div>
+        <div class="lang-hider"></div>
+    </div>
+    
+
+    <!-- PUT LOGIN FORM IN DIV INSTEAD OF FORM. JS FUNCTION KEYCODE AND HIDE DONT WORK ELSE -->
+    <div id="FORM-POPUP" class="form-popup">
+        <div class="form-container">
+            <h1>Login</h1>
+            <input type="password" id="PASSWORD" class="password" value="" onkeydown="if(event.keyCode == 13) document.getElementById('LOGIN-BTN').click()">
+            <!-- USE BUTTON TO LOGIN INSTEAD OF INPUT=BUTTON, BUTTON CAN BE PLACED ANYWHERE -->
+            <button  id="LOGIN-BTN" class="login-btn" onclick="checkPassword()">Login</button>
+            <button type="submit" id="CANCEL-BTN" class="cancel-btn" onclick="closeForm()">Cancel</button>
+        </div>
+    </div>
+
+    <div class="sidebar-popup" id="SIDEBAR-POPUP">
+        <ul>
+            <li><a href="#INFO"><i class="fa fa-link"></i>Top</a></li>
+            <li><a href="#NEWS"><i class="fas fa-desktop"></i>News</a></li>
+            <li><a href="#BENEFITS"><i class="fa fa-eye"></i>Benefits</a></li>
+            <li><a href="#AGREEMENTS"><i class="fa fa-book"></i>Agreements</a></li>
+            <li><a href="#VIP"><i class="fas fa-user-shield"></i>VIP</a></li>
+            <li><a href="#CONTACT"><i class="fa fa-question-circle"></i>Contact</a></li>
+        </ul>
+        <!-- <div class="sidebar-container">
+            <button>
+                <a href="#INFO"><i class="fa fa-link"></i>Top</a>
+            </button>
+            <button>
+                <a href="#NEWS"><i class="fas fa-desktop"></i>News</a>
+            </button>
+            <button>
+                <a href="#BENEFITS"><i class="fa fa-eye"></i>Benefits</a>
+            </button>
+            <button><a href="#AGREEMENTS"><i class="fa fa-book"></i>Agreements</a></button>
+            <button>
+                <a href="#VIP"><i class="fas fa-user-shield"></i>VIP</a>
+            </button>
+            <button>
+                <a href="#CONTACT"><i class="fa fa-question-circle"></i>Contact</a>
+            </button>
+        </div> -->
+    </div>
+
+    <div class="outer-div">
+
+        <div class="info" id="INFO">
+            <h2>We must be many!</h2><br>
+            <ol>
+                <li>It is the number of members that determines the influence of the trade union movement.</li>
+                <li>It is we who organized who created the welfare state - and it is we who must defend it.</li>
+                <li>Fellesforbundet gives those organized in a workplace the tools to fight for better pay and working conditions.</li>
+                <li>Over a hundred years of history have shown us that it is only when we stand together that we can manage to get our fair share of the values that are created in the company and society.</li>
+            </ol>
+            <p> 
+                As a trade unionist in Fellesforbundet, you have many advantages, both in terms of salary, working hours and other social conditions. 
+                In addition, you get good insurance and other good membership benefits e.g. on rental car, holidays / experiences, mobile telephony / broadband through LOfavør.
+            </p>
+        </div>
+
+        <div class="news" id="NEWS">
+            <h2>News:</h2><br>
+            <p>We are currently under local sallary negotiations. This means we might get raise and some additional perks at work. Stay tuned for updates.</p>
+            <p>We need more members to have better position in negotiations.</p>
+        </div>
+
+        <div class="benefits" id="BENEFITS">
+            <h2>As organized in a company with a collective agreement, you get:</h2><br>
+        <ol>
+            <li>Guaranteed, contractual salary (according to the collective agreement). Right to annual local negotiations</li>
+            <li>37,5 working hours or less a week. Assistance in the event of involuntary part-time work or breach of the law or contractual provisions on working hours</li>
+            <li>Statutory parental, care and educational leave. As a partner, you are entitled to 14 days of paid leave in connection with the birth/adoption of a child</li>
+            <li>At least 50% and often 100% overtime allowance</li>
+            <li>Various allowances such as evening, night and weekend allowances</li>
+            <li>National Insurance provisions and AFP allowance (contractual pension)</li>
+            <li>5 weeks holiday and 12% holiday allowance</li>
+            <li>Right to legal assistance/assessment in the event of termination</li>
+            <li>Right to legal assistance/assessment in the event of occupational injury</li>
+        </ol><br>
+        <h2>Insurance options offered by Fellesforbundet:</h2><br>
+        <ol>
+            <li>LOfavør Home Contents Insurance: A full-value insurance of contents and movables that also includes liability insurance, legal aid insurance and insurance of your contents and movables. The insurance does not cover student members.</li>
+            <li>LOfavør Basic Insurance: This insurance policy provides financial ‘first aid’ in the form of a one-off payment when a member, spouse/cohabitant or child dies. The insurance does not cover student members.</li>
+            <li>LOfavør Accident Insurance: This insurance policy provides financial support in the event of death, disability and treatment expenses resulting from an accident that has occurred outside working hours. All members below the age of 70 are eligible for this insurance – with the exception of student members.</li>
+        </ol><br>
+        <h2>Self-payment insurance:</h2><br>
+        <ol>
+            <li>LOfavør Legal Aid Insurance: All professionally active members of Fellesforbundet are eligible for this scheme from 1 May 2020. The insurance costs NOK 71/ month. The insurance policy applies to key areas of law in private life, such as family and inheritance, purchase of goods, rent, neighbour disputes, insurance claims and revocation of driver’s licence.</li>
+            <li>LOfavør Travel Insurance: All members of Fellesforbundet are eligible for this insurance at NOK 95 a month. The insurance policy covers the whole family, 24 hours a day, globally. No excess or cancellation insurance is included.</li>
+        </ol><br>
+        <h2>Support for further/continuing education/training:</h2><br>
+        <p>If you are a member of the Fellesforbundet (and not a student) and have been a member for the past three years, you will be able to apply for support from the Confederation of Trade Unions’ (LO) educational fund! The fund provides support for full-year educational/training courses as well as for shorter courses.</p>
+        </div>
+
+        <div class="agreements" id="AGREEMENTS">
+            <h2>Collective agreements:</h2><br>
+            <p><a href="https://www.fellesforbundet.no/globalassets/in-english/collective-agreement-settlements/cas-2020/collective-agreement-for-the-building-industry-fob-20202022.pdf">English version PDF</a></p>
+            <p><a href="https://www.fellesforbundet.no/globalassets/lonn-og-tariffsaker/tariffavtaler/overenskomster-2020-2022/riksavtalen-2020-2022.pdf">Norwegian version PDF</a></p>
+            <p><a href="https://www.fellesforbundet.no/globalassets/lonn-og-tariffsaker/hovedoppgjoret-2022---riksavtalen.pdf">Minimum wages PDF</a></p>
+        </div>
+
+        <!-- IMPLEMENTING FLIP CARD TO CONTACTS -->
+        <div class="contact">
+            <h2>Contact:</h2><br>
+            <div class="card-container">
+                <div class="container">
+                    <div class="card">
+                        <div class="front"><img src="Ali.JPG" alt=""></div>
+                        <div class="back">
+                            <h2>Ali Degirmenci</h2>
+                            <p>Hovedtillitsvalgt avd 10</p><br><br>
+                            <p><a href="tel:90401253">Call me</a></p><br><br>
+                            <p><a href="mailto:tillitsvalgte.no@sodexo.com">Mail me</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-2">
+                    <div class="card">
+                        <div class="front"><img src="Marina.JPG" alt=""></div>
+                        <div class="back">
+                            <h2>Marina Fedjajeva</h2>
+                            <p>Tillitsvalgt avd 10</p><br><br>
+                            <p><a href="tel:+4741321690">Call me</a></p><br><br>
+                            <p><a href="mailto:tillitsvalgte.no@sodexo.com">Mail me</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="vip" id="VIP">
+            <h2>VIP Section:</h2><br>
+            <div class="hidden" id="HIDDEN-CONTAINER">
+                <p>Work in progress...</p>
+                <p>Adding password system to be able to view this section ONLY for members.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        Copyright: Ali Degirmenci ©
+    </footer>
+
+
+    <script src="app.js"></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en',includedLanguages: 'ar,en,es,jv,ko,pa,pt,ru,zh-CN,no,it,ku,ps,fa,ro,sr,sw,ta,tr,ur,vi,lt,lv,id,el,fr,fi,et,hr,bs,bg,sq,nl,th,ug', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>
