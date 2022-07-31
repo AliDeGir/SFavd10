@@ -265,6 +265,9 @@ ul li:hover a {
     border-radius: 4px;
     line-height: 25px;
 }
+.outer-div h2 {
+    text-align: center;
+}
 ol {
     margin-left: 25px;
     list-style: circle;
