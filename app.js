@@ -1,5 +1,5 @@
 function checkPassword() {
-    if (document.getElementById('PASSWORD').value == Avd10) {
+    if (document.getElementById('PASSWORD').value == 123) {
         document.getElementById('HIDDEN-CONTAINER').classList.remove("hidden");
         document.getElementById('FORM-POPUP').style.visibility= "hidden"
         document.getElementById('VIP-BTN').style.visibility= "hidden"
