@@ -56,6 +56,11 @@ body {
 h1 span {
     display: inline-block;
 }
+
+#newText {
+    color: red;
+}
+
 .vip-btn {
     height: 40px;
     font-weight: 900;
