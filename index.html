@@ -22,7 +22,6 @@
             <h1 class="header-text-1 notranslate">Sodexo <span>Fellesforbundet <span> Avd 10</span></span></h1>
         </div>
     </div>
-    <button id="VIP-BTN" class="vip-btn notranslate" onclick="openForm()">VIP</button>
 
     <input type="checkbox" id="CHECK-BOX" class="check-box">
     <label for="CHECK-BOX" class="burger" id="BURGER"><div></div></label>
@@ -30,18 +29,6 @@
     <div class="lang-container">
         <div id="google_translate_element" class="lang-menu"></div>
         <div class="lang-hider"></div>
-    </div>
-    
-
-    <!-- PUT LOGIN FORM IN DIV INSTEAD OF FORM. JS FUNCTION KEYCODE AND HIDE DONT WORK ELSE -->
-    <div id="FORM-POPUP" class="form-popup">
-        <div class="form-container">
-            <h1>Login</h1>
-            <input type="password" id="PASSWORD" class="password" value="" onkeydown="if(event.keyCode == 13) document.getElementById('LOGIN-BTN').click()">
-            <!-- USE BUTTON TO LOGIN INSTEAD OF INPUT=BUTTON, BUTTON CAN BE PLACED ANYWHERE -->
-            <button  id="LOGIN-BTN" class="login-btn" onclick="checkPassword()">Login</button>
-            <button type="submit" id="CANCEL-BTN" class="cancel-btn" onclick="closeForm()">Cancel</button>
-        </div>
     </div>
 
     <div class="sidebar-popup" id="SIDEBAR-POPUP">
@@ -159,6 +146,16 @@
 
         <div class="vip" id="VIP">
             <h2>VIP Section:</h2><br>
+            <!-- PUT LOGIN FORM IN DIV INSTEAD OF FORM. JS FUNCTION KEYCODE AND HIDE DONT WORK ELSE -->
+            <div id="FORM-POPUP" class="form-popup">
+                <div class="form-container">
+                    <h1>Login</h1>
+                    <input type="password" id="PASSWORD" class="password" value="" onkeydown="if(event.keyCode == 13) document.getElementById('LOGIN-BTN').click()">
+                    <!-- USE BUTTON TO LOGIN INSTEAD OF INPUT=BUTTON, BUTTON CAN BE PLACED ANYWHERE -->
+                    <button  id="LOGIN-BTN" class="login-btn" onclick="checkPassword()">Login</button>
+                    <button type="submit" id="CANCEL-BTN" class="cancel-btn" onclick="closeForm()">Cancel</button>
+                </div>
+            </div>
             <div class="hidden" id="HIDDEN-CONTAINER">
                 <h1>IMPORTANT!!</h1><br>
                 <p>-Do not sign any documents you do not not understand 100%!</p>
