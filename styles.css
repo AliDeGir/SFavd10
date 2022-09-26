@@ -155,12 +155,12 @@ h1 span {
     width: 350px;
     height: 430px;
     display: flex;
-    position: fixed;
+    position: relative;
     z-index: 9;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* How to position div in display center */
-    visibility: hidden;
+    /* top: 50%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); How to position div in display center */
+    /* visibility: hidden; */
     justify-content: center;
 }
 .form-container {
